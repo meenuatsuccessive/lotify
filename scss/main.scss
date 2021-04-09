@@ -1,0 +1,76 @@
+@import 'config';
+@import 'utils';
+
+// Common
+* {
+  box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+}
+
+body {
+  font-family: 'Poppins', sans-serif;
+}
+
+ul {
+  list-style: none;
+}
+
+a {
+  text-decoration: none;
+}
+
+.wrapper {
+  max-width: 1920px;
+}
+
+// Header
+
+.header {
+  background-image: linear-gradient(90deg, $bg-primary, $bg-secondary);
+
+  .container {
+    max-width: 90%;
+    margin: auto;
+  }
+}
+
+.navbar {
+  display: flex;
+  padding-top: 36px;
+  justify-content: space-between;
+  align-items: center;
+
+  ul {
+    display: flex;
+    color: #fff;
+
+    li {
+      padding: 1rem;
+
+      a {
+        color: #fff;
+      }
+    }
+  }
+
+  .connect {
+    a {
+      padding: 0 1rem;
+      color: #fff;
+
+      i {
+        color: #fff;
+        background-color: $font-color-red;
+        padding: 1rem;
+        border-radius: 50%;
+      }
+    }
+
+    .sign-in {
+      padding: 1rem 2rem;
+      background-color: #563299;
+      border-radius: 30%;
+    }
+  }
+}
