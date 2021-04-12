@@ -1,1 +1,22 @@
+.btn {
+  padding: 1rem 2rem;
+  border-radius: 30px;
+  color: #fff;
+}
 
+.btn-red {
+  background-color: $font-color-red;
+}
+
+.btn-primary {
+  background-color: $font-color-primary;
+}
+
+.content-heading-span {
+  font: 12px;
+  color: $font-color-red;
+}
+
+.mt {
+  margin-top: 50px;
+}
