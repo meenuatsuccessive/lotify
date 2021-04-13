@@ -1,0 +1,25 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500&display=swap");
+.btn {
+  padding: 1rem 2rem;
+  border-radius: 30px;
+  color: #fff; }
+
+.btn-red {
+  background-color: #fb3a5a; }
+
+.btn-primary {
+  background-color: #563299; }
+
+.content-heading-span {
+  font: 12px;
+  color: #fb3a5a; }
+
+.mt {
+  margin-top: 50px; }
+
+@media screen and (max-width: 1100px) {
+  .toggle-menu {
+    display: inline-block; }
+  .navbar ul,
+  .navbar .connect {
+    display: none; } }

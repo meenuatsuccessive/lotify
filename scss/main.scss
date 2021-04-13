@@ -39,6 +39,12 @@ a {
 .header {
   background-image: linear-gradient(95deg, $bg-primary, $bg-secondary);
 
+  .toggle-menu {
+    display: none;
+    color: #fff;
+    font-size: 20px;
+  }
+
   .navbar {
     max-width: 90%;
     margin: auto;
@@ -50,13 +56,6 @@ a {
     grid-template-columns: 2fr 3fr;
   }
 }
-
-// .curve {
-//   background: url(../img/Vector.png);
-//   background-repeat: no-repeat;
-//   background-size: cover;
-//   height: 300px;
-// }
 
 .header-bg {
   height: 650px;
@@ -96,6 +95,47 @@ a {
         padding: 1rem;
         border-radius: 50%;
       }
+    }
+  }
+}
+
+.sidebar {
+  display: none;
+  position: fixed;
+  top: 0;
+  right: 0;
+  width: 250px;
+  height: 100vh;
+  background-color: rgba(0, 0, 0, 0.4);
+  color: #fff;
+  padding: 1rem;
+
+  a {
+    color: #fff;
+  }
+  ul {
+    li {
+      padding: 0.5rem 0rem;
+    }
+  }
+
+  .connect {
+    display: flex;
+    flex-direction: column;
+
+    i {
+      color: #fff;
+      background-color: $font-color-red;
+      padding: 0.5rem;
+      border-radius: 50%;
+      margin-left: 10px;
+    }
+
+    .btn {
+      margin-top: 15px;
+      padding: 0.6rem;
+      width: 150px;
+      text-align: center;
     }
   }
 }
@@ -260,5 +300,300 @@ a {
     h2 {
       margin-top: 20px;
     }
+  }
+}
+
+.subscription {
+  background-image: linear-gradient(95deg, #251d5c, #4a2681);
+  height: 300px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: relative;
+  z-index: -1;
+  overflow: hidden;
+}
+.subscription .bg-top {
+  background-image: url(../img/top.png);
+  background-size: cover;
+  transform: rotate(271deg);
+  position: absolute;
+  top: -35px;
+  left: 0;
+  z-index: 2;
+  width: 220px;
+  height: 285px;
+}
+.subscription .subscription-content {
+  color: #fff;
+  text-align: center;
+}
+.subscription .subscription-content h3 {
+  padding-top: 10px;
+  font-weight: 400;
+}
+.subscription .subscription-content .form-group {
+  padding-top: 2.5rem;
+  color: #9ea8b2;
+  display: flex;
+  align-items: center;
+}
+.subscription .subscription-content .form-group input {
+  padding: 0.6rem 5rem 0.6rem 1rem;
+  margin-right: 0;
+  outline: 0;
+  border: 0;
+  border-radius: 2px 0 0 2px;
+}
+.subscription .subscription-content .form-group button {
+  margin-left: 0;
+  padding: 0.6rem 2.4rem;
+  background-color: #fb3a5a;
+  outline: 0;
+  border: 0;
+  border-radius: 0 2px 2px 0;
+  color: #fff;
+}
+.subscription .subscription-content p {
+  color: #918ccf;
+  font-size: 12px;
+  padding-top: 20px;
+}
+.subscription .bg-bottom {
+  background-image: url(../img/bottom.png);
+  background-size: cover;
+  width: 587px;
+  height: 175px;
+  position: absolute;
+  right: -115px;
+  bottom: 0;
+}
+
+// Pricing-Blog
+
+.pricing-blog {
+  margin-top: 100px;
+  margin-bottom: 200px;
+
+  .pricing {
+    text-align: center;
+    width: 90%;
+    margin: auto;
+
+    .card-wrap {
+      display: grid;
+      grid-template-columns: repeat(3, 1fr);
+      grid-gap: 0 5rem;
+
+      .card.active {
+        background-color: #37206e;
+        color: #fff;
+      }
+      .card:nth-child(1),
+      .card:nth-child(3) {
+        background-color: #fff;
+      }
+
+      .card {
+        box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+        padding: 30px 50px;
+        width: 100%;
+        border-radius: 2px;
+
+        i {
+          margin-left: 20px;
+        }
+
+        hr {
+          margin-top: 30px;
+        }
+
+        .service-detail {
+          margin: 30px 10px;
+        }
+
+        .bw {
+          margin-bottom: 20px;
+          display: flex;
+          justify-content: space-between;
+        }
+      }
+    }
+  }
+
+  // Blog
+
+  .blog {
+    text-align: center;
+    width: 90%;
+    margin: auto;
+
+    img {
+      width: 100%;
+      height: 250px;
+      object-fit: cover;
+    }
+
+    .blog-card {
+      display: grid;
+      grid-template-columns: repeat(3, 1fr);
+      grid-gap: 0 5rem;
+
+      .card {
+        background-color: #fff;
+        box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+        border-radius: 5px;
+      }
+
+      .about-author {
+        margin: 30px 10px;
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+      }
+    }
+  }
+}
+
+// Service-user
+
+.service-user {
+  width: 100%;
+  height: 500px;
+  background-image: linear-gradient(95deg, $bg-primary, $bg-secondary);
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+
+  .service-user-login {
+    margin: auto;
+    color: #fff;
+
+    h2 {
+      font-weight: 500;
+    }
+
+    p {
+      color: #fff;
+      font-size: 12px;
+      margin: 5px 0;
+    }
+
+    .form-group {
+      input {
+        width: 100%;
+        background-color: #6e6294;
+        padding: 8px;
+        margin: 20px 0;
+        outline: none;
+        border: none;
+
+        ::placeholder {
+          color: #fff;
+        }
+      }
+
+      button {
+        margin: 20px 0;
+        color: #fff;
+        background-color: $font-color-red;
+        padding: 0.5rem 1.5rem;
+        border-radius: 2px;
+        border: none;
+        outline: none;
+      }
+    }
+  }
+
+  .service-user-media {
+    background-image: url(/dist/img/service-user-media.png);
+    background-size: cover;
+    background-repeat: no-repeat;
+    width: 486px;
+    height: 475px;
+    margin: auto;
+  }
+}
+
+// Collaboration
+.international-collaboration {
+  margin: 100px 30px;
+  height: 400px;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+
+  .collaboration-media {
+    background-image: url(/dist/img/collaboration-media.png);
+    background-size: cover;
+    background-repeat: no-repeat;
+    width: 433px;
+    height: 296px;
+  }
+}
+
+// TEAM
+
+.team {
+  text-align: center;
+  width: 90%;
+  margin: auto;
+
+  img {
+    // width: 250px;
+    width: 100%;
+    height: 500px;
+  }
+
+  .team-card {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-gap: 0 5rem;
+
+    .card {
+      background-color: #fff;
+      box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+      border-radius: 5px;
+    }
+
+    .about-team {
+      margin: 30px 10px;
+      display: grid;
+      grid-template-columns: repeat(2, 1fr);
+    }
+  }
+}
+
+// Showcase
+
+.showcases {
+  margin: auto;
+  width: 90%;
+  height: 500px;
+  text-align: center;
+
+  .showcase-container {
+    margin: 100px 0;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+
+    .showcase-media-1 {
+      background-color: #fff;
+      box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+
+      .showcase-card {
+        img {
+          width: 100%;
+
+          height: 300px;
+        }
+      }
+    }
+  }
+}
+
+// Footer
+
+footer {
+  .container {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
   }
 }
