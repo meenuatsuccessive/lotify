@@ -19,7 +19,7 @@
 
 @media screen and (max-width: 1100px) {
   .toggle-menu {
-    display: inline-block; }
+    display: block !important; }
   .navbar ul,
   .navbar .connect {
     display: none; } }

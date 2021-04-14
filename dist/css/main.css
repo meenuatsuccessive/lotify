@@ -45,7 +45,7 @@ a {
 .header {
   background-image: linear-gradient(95deg, #251d5c, #4a2681); }
   .header .toggle-menu {
-    display: none;
+    display: hidden;
     color: #fff;
     font-size: 20px; }
   .header .navbar {
@@ -72,7 +72,7 @@ a {
     display: flex;
     color: #fff; }
     .navbar ul li {
-      padding: 1rem; }
+      padding: 1rem 0.6rem; }
       .navbar ul li a {
         color: #fff; }
   .navbar .connect a.phone {
@@ -96,6 +96,8 @@ a {
   padding: 1rem; }
   .sidebar a {
     color: #fff; }
+  .sidebar ul i {
+    text-align: right; }
   .sidebar ul li {
     padding: 0.5rem 0rem; }
   .sidebar .connect {
@@ -293,7 +295,9 @@ a {
 
 .pricing-blog {
   margin-top: 100px;
-  margin-bottom: 200px; }
+  margin-bottom: 200px;
+  background-image: url(../img/rectangle.png);
+  background-repeat: repeat; }
   .pricing-blog .pricing {
     text-align: center;
     width: 90%;
@@ -326,7 +330,8 @@ a {
   .pricing-blog .blog {
     text-align: center;
     width: 90%;
-    margin: auto; }
+    margin: auto;
+    margin-top: 100px; }
     .pricing-blog .blog img {
       width: 100%;
       height: 250px;
@@ -334,7 +339,8 @@ a {
     .pricing-blog .blog .blog-card {
       display: grid;
       grid-template-columns: repeat(3, 1fr);
-      grid-gap: 0 5rem; }
+      grid-gap: 0 5rem;
+      margin-top: 50px; }
       .pricing-blog .blog .blog-card .card {
         background-color: #fff;
         box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
@@ -431,3 +437,7 @@ a {
       .showcases .showcase-container .showcase-media-1 .showcase-card img {
         width: 100%;
         height: 300px; }
+
+footer .container {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr); }
